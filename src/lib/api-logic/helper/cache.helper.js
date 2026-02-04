@@ -1,8 +1,4 @@
 import http from "../utils/http.js";
-import dotenv from "dotenv";
-
-dotenv.config();
-
 const CACHE_SERVER_URL = process.env.CACHE_URL || null;
 
 export const getCachedData = async (key) => {
