@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone',
-    experimental: {
-        serverComponentsExternalPackages: ['cheerio', 'crypto-js'],
-    },
+    serverExternalPackages: ['cheerio', 'crypto-js'],
     images: {
         unoptimized: true,
     },
